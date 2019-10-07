@@ -1,0 +1,11 @@
+<div *ngFor="let product of cart">
+  <h3>
+    <a [title]="product.name">
+      {{product.name}}
+    </a>
+  </h3>
+  <span> ${{product.price}}</span>
+</div>
+
+<a routerLink="/list" class="button fancy-button">Go back</a>
+<router-outlet></router-outlet>
